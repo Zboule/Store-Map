@@ -1,0 +1,177 @@
+/**
+ * Store Map
+ * http://wordpress.org/plugins
+ *
+ * Copyright (c) 2016 Jordane CURE
+ * Licensed under the GPLv2+ license.
+ */
+ 
+@import 'customSCSS/_various-mixin.scss';
+@import 'customSCSS/_grow-shadow.scss';
+@import 'customSCSS/_flex-mixin.scss';
+
+
+
+ #store_map_container
+ {
+    $hauteurCarte : 500px;
+    $couleurDominante : red;
+    $couleurSecondaire : transparent;
+    $couleurBordures : transparent;
+    $couleurLiens : transparent;
+    
+    @include flexbox;
+    @include flex-direction (row);
+    @include flex-wrap (wrap);
+    
+    #store_map_recherche
+    {
+        @include flex (1,100%);
+        
+        background-color:$couleurDominante;
+        
+        padding-bottom:15px;
+        padding-top:15px;
+        padding-left:15px;
+        padding-right:15px;
+        height:60px;
+        
+        @include flexbox;
+        @include flex-direction (row);
+        @include align-items (center);
+ 
+        
+        > input
+        {
+            width:auto;
+            height:100%;
+            margin:0px;
+        }
+        
+        #store_map_search_input
+        {
+           @include flex (2);
+        }
+        
+        #store_map_search_button
+        {
+            @include flex (1);
+            margin-left:10px;
+            margin-right:50px;
+        }
+        
+        #store_map_my_position_button
+        {
+            @include flex (1);
+        }
+    }
+    
+    
+    #store_map_liste
+    {
+        @include flex (2);
+        height:$hauteurCarte;
+        
+        overflow:scroll;
+        border-right:2px solid $couleurBordures;
+
+
+        .store_map_description
+        {
+            border-top:1px solid $couleurBordures;
+            z-index:1;
+        
+            
+            &:hover
+            {
+                cursor:pointer;
+                .titreStore
+                {  
+                   @include grow-shadow-hover;
+                }
+            }
+            
+            .titreStore
+            { 
+                
+                @include flexbox;
+                @include flex-direction (row);
+                @include align-items (center);
+                
+                @include grow-shadow;
+                z-index:0;
+                background:$couleurSecondaire;
+                padding:10px;
+                padding-left:15px;
+ 
+                h3
+                {
+                    @include flex (1,1,auto);
+                    margin:0px;
+                    padding:0px;
+                    font-size:1.1em;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                
+                .distance
+                {
+                    @include flex (1,1,auto);
+                    text-align:right;
+                    vertical-align:center;
+                    margin-bottom:0px;
+                    padding-right:5px;
+                }
+            }
+            
+            
+            
+            .description
+            {
+                padding-bottom:10px;
+                padding-right:10px;
+                padding-left:20px;
+                p
+                {
+                    margin-bottom:0px;   
+                }
+                
+                a,a:link
+                {
+                   box-shadow: none;
+                   color:inherit;
+                   
+                   &:hover 
+                   {
+                       color:$couleurLiens;
+                   }
+                }
+            }
+        }
+        
+        .store_map_description.activeStore 
+        {
+            .titreStore
+            {
+                background:red;
+            }
+        }
+    }
+    
+    #store_map_map
+    {
+        @include flex (5);
+        height:$hauteurCarte;
+        
+        .gm-style-iw
+        {
+            
+            p
+            {
+                margin-top:2px;
+                margin-bottom:2px;
+            }
+            
+        }
+    }
+ }

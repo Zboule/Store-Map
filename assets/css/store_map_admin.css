@@ -1,0 +1,39 @@
+/**
+ * Store Map
+ * http://wordpress.org/plugins
+ *
+ * Copyright (c) 2016 Jordane CURE
+ * Licensed under the GPLv2+ license.
+ */
+.post-type-store_map_cpt #editor_title {
+  margin-top: 30px; }
+.post-type-store_map_cpt #meta_boxe_title {
+  margin-top: 30px; }
+.post-type-store_map_cpt #post-body-content {
+  margin-bottom: 0px; }
+.post-type-store_map_cpt #normal-sortables {
+  display: none; }
+.post-type-store_map_cpt #store_map_metabox_menu {
+  background-color: transparent;
+  border: none; }
+  .post-type-store_map_cpt #store_map_metabox_menu .handlediv {
+    display: none; }
+  .post-type-store_map_cpt #store_map_metabox_menu .ui-sortable-handle {
+    display: none; }
+  .post-type-store_map_cpt #store_map_metabox_menu .inside {
+    background-color: transparent;
+    padding: 0px; }
+    .post-type-store_map_cpt #store_map_metabox_menu .inside h1 {
+      margin-top: 30px; }
+    .post-type-store_map_cpt #store_map_metabox_menu .inside #store_map_store_adresse, .post-type-store_map_cpt #store_map_metabox_menu .inside #store_map_store_icone {
+      padding-top: 11px;
+      padding-bottom: 11px;
+      padding-left: 8px;
+      width: 100%;
+      font-size: 1.5em; }
+.post-type-store_map_cpt #store_map_map {
+  height: 300px; }
+.post-type-store_map_cpt #minor-publishing {
+  display: none; }
+
+/*# sourceMappingURL=store_map_admin.css.map */
