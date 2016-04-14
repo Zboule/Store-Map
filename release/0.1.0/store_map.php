@@ -58,8 +58,6 @@ function store_map_init() {
 	include_once(store_map_PATH."includes/store_map_core.php");
 	$storeMap = new Store_Map_Core ();
 	
-	error_log("test");
-	
 }
 add_action( 'init', 'store_map_init' );
 
