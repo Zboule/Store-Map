@@ -42,6 +42,7 @@ define( 'store_map_URL',     plugin_dir_url( __FILE__ ) );
 define( 'store_map_PATH',    dirname( __FILE__ ) . '/' );
 
 
+
 /**
  * Default initialization for the plugin:
  * - Registers the default textdomain.
