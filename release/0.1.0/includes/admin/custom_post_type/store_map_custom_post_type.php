@@ -15,14 +15,14 @@ class Store_Custom_Post_Type
     		'name'                => __( 'Store Map', 'Post Type General Name', 'store_map' ),
     		'singular_name'       => __( 'Stores Map', 'Post Type Singular Name', 'store_map' ),
     		'menu_name'           => __( 'Store Map', 'store_map' ),
-    		'parent_item_colon'   => __( 'Parent Movie', 'store_map' ),
-    		'all_items'           => __( 'Toutes les boutiques', 'store_map' ),
-    		'view_item'           => __( 'View Movie', 'store_map' ),
-    		'add_new_item'        => __( 'Nom de la boutique', 'store_map' ),
-    		'add_new'             => __( 'Ajouter', 'store_map' ),
-    		'edit_item'           => __( 'Edit Movie', 'store_map' ),
-    		'update_item'         => __( 'Update Movie', 'store_map' ),
-    		'search_items'        => __( 'Search Movie', 'store_map' ),
+    		'parent_item_colon'   => __( 'Parent Store', 'store_map' ),
+    		'all_items'           => __( 'All stores', 'store_map' ),
+    		'view_item'           => __( 'View Store', 'store_map' ),
+    		'add_new_item'        => __( 'Store Name', 'store_map' ),
+    		'add_new'             => __( 'Add', 'store_map' ),
+    		'edit_item'           => __( 'Edit Store', 'store_map' ),
+    		'update_item'         => __( 'Update Store', 'store_map' ),
+    		'search_items'        => __( 'Search Store', 'store_map' ),
     		'not_found'           => __( 'Not Found', 'store_map' ),
     		'not_found_in_trash'  => __( 'Not found in Trash', 'store_map' ),
     	);
@@ -30,8 +30,8 @@ class Store_Custom_Post_Type
         // Set other options for Custom Post Type
     	
     	$args = array(
-    		'label'               => __( 'movies', 'store_map' ),
-    		'description'         => __( 'Movie news and reviews', 'store_map' ),
+    		'label'               => __( 'stores', 'store_map' ),
+    		'description'         => __( 'Stores', 'store_map' ),
     		'labels'              => $labels,
     		// Features this CPT supports in Post Editor
     		'supports'            => array( 'title','editor'),

@@ -29,38 +29,41 @@
         @include flex (1,100%);
         
         background-color:$couleurDominante;
-        
         padding-bottom:15px;
-        padding-top:15px;
-        padding-left:15px;
-        padding-right:15px;
-        height:60px;
+
+        //height:60px;
         
         @include flexbox;
         @include flex-direction (row);
         @include align-items (center);
- 
+        @include flex-wrap (wrap);
         
-        > input
+        > div
         {
-            width:auto;
+            padding-top:15px;
+            padding-left:15px;
+            padding-right:15px;
+        }
+        
+        input
+        {
+            width:100%;
             height:100%;
             margin:0px;
         }
         
-        #store_map_search_input
+        #store_map_div_search_input
         {
-           @include flex (2);
+            min-width:200px;
+            @include flex (2);
         }
         
-        #store_map_search_button
+        #store_map_div_search_button
         {
             @include flex (1);
-            margin-left:10px;
-            margin-right:50px;
         }
         
-        #store_map_my_position_button
+        #store_map_div_my_position_button
         {
             @include flex (1);
         }
@@ -70,6 +73,9 @@
     #store_map_liste
     {
         @include flex (2);
+        
+        min-width:330px;
+        
         height:$hauteurCarte;
         
         overflow:scroll;
@@ -162,6 +168,7 @@
     {
         @include flex (5);
         height:$hauteurCarte;
+        min-width:330px;
         
         .gm-style-iw
         {
