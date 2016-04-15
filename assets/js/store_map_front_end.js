@@ -517,6 +517,40 @@ function Green_Tiger_Store_Distance_Updater (origineCoordonate,stores_liste)
 
 
 
+/* Modify layout */
+jQuery(function($){
+    
+    var div_liste = $("#store_map_liste");
+    var div_map = $("#store_map_map");
+    
+    var breakPoint  = parseInt(div_liste.css('min-width')) + parseInt(div_map.css('min-width'));
+
+    var container = $("#store_map_display");
+        
+        
+    $(window).load(function(){
+        setRowOrColumn();
+        $(window).resize(setRowOrColumn);
+	});
+	
+	
+	function setRowOrColumn ()
+	{
+        if ($("#store_map_container").width() < breakPoint && container.hasClass( "store_map_row" ))
+        {
+            container.removeClass("store_map_row");
+            container.addClass("store_map_column");
+        }
+        else if ($("#store_map_container").width() >= breakPoint && container.hasClass( "store_map_column" ))
+        {
+            container.removeClass("store_map_column");
+            container.addClass("store_map_row");            
+        }
+        
+        console.log($("#store_map_container").width() + "   " + container.hasClass( "store_map_row" ));
+	}
+	
+});
 /*global document */
 /*global jQuery */
 /*global alert */

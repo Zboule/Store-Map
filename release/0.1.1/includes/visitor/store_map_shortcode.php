@@ -44,11 +44,15 @@ class Store_Map {
                     
                 </div>
                 
-                <div id="store_map_liste">
-                
-                </div>
-                
-                <div id="store_map_map">
+                <div id="store_map_display" class="store_map_row">
+                    
+                    <div id="store_map_liste">
+                    
+                    </div>
+                    
+                    <div id="store_map_map">
+                    
+                    </div>
                     
                 </div>
                 

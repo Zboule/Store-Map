@@ -70,115 +70,136 @@
     }
     
     
-    #store_map_liste
+    #store_map_display
     {
-        @include flex (2);
-        
-        min-width:330px;
+        @include flex (1 100%);
         
         height:$hauteurCarte;
+        overflow:hidden;
         
-        overflow:scroll;
-        border-right:2px solid $couleurBordures;
-
-
-        .store_map_description
+        @include flexbox;
+        
+        &.store_map_row
         {
-            border-top:1px solid $couleurBordures;
-            z-index:1;
+            @include flex-direction (row);
+        }
         
+        &.store_map_column
+        {
+            @include flex-direction (column);
+        }
+
             
-            &:hover
+        #store_map_liste
+        {
+            @include flex (2);
+            min-width:300px;
+            min-height:240px;
+
+            overflow:scroll;
+            border-right:2px solid $couleurBordures;
+    
+    
+            .store_map_description
             {
-                cursor:pointer;
+                border-top:1px solid $couleurBordures;
+                z-index:1;
+            
+                
+                &:hover
+                {
+                    cursor:pointer;
+                    .titreStore
+                    {  
+                       @include grow-shadow-hover;
+                    }
+                }
+                
                 .titreStore
-                {  
-                   @include grow-shadow-hover;
+                { 
+                    
+                    @include flexbox;
+                    @include flex-direction (row);
+                    @include align-items (center);
+                    
+                    @include grow-shadow;
+                    z-index:0;
+                    background:$couleurSecondaire;
+                    padding:10px;
+                    padding-left:15px;
+     
+                    h3
+                    {
+                        @include flex (1,1,auto);
+                        margin:0px;
+                        padding:0px;
+                        font-size:1.1em;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                    
+                    .distance
+                    {
+                        @include flex (1,1,auto);
+                        text-align:right;
+                        vertical-align:center;
+                        margin-bottom:0px;
+                        padding-right:5px;
+                    }
+                }
+                
+                
+                
+                .description
+                {
+                    padding-bottom:10px;
+                    padding-right:10px;
+                    padding-left:20px;
+                    p
+                    {
+                        margin-bottom:0px;   
+                    }
+                    
+                    a,a:link
+                    {
+                       box-shadow: none;
+                       color:inherit;
+                       
+                       &:hover 
+                       {
+                           color:$couleurLiens;
+                       }
+                    }
                 }
             }
             
-            .titreStore
-            { 
-                
-                @include flexbox;
-                @include flex-direction (row);
-                @include align-items (center);
-                
-                @include grow-shadow;
-                z-index:0;
-                background:$couleurSecondaire;
-                padding:10px;
-                padding-left:15px;
- 
-                h3
-                {
-                    @include flex (1,1,auto);
-                    margin:0px;
-                    padding:0px;
-                    font-size:1.1em;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                }
-                
-                .distance
-                {
-                    @include flex (1,1,auto);
-                    text-align:right;
-                    vertical-align:center;
-                    margin-bottom:0px;
-                    padding-right:5px;
-                }
-            }
-            
-            
-            
-            .description
+            .store_map_description.activeStore 
             {
-                padding-bottom:10px;
-                padding-right:10px;
-                padding-left:20px;
+                .titreStore
+                {
+                    background:red;
+                }
+            }
+        }
+        
+        #store_map_map
+        {
+            @include flex (5);
+            min-width:400px;
+            min-height:240px;
+            
+            
+            .gm-style-iw
+            {
+                
                 p
                 {
-                    margin-bottom:0px;   
+                    margin-top:2px;
+                    margin-bottom:2px;
                 }
                 
-                a,a:link
-                {
-                   box-shadow: none;
-                   color:inherit;
-                   
-                   &:hover 
-                   {
-                       color:$couleurLiens;
-                   }
-                }
-            }
-        }
-        
-        .store_map_description.activeStore 
-        {
-            .titreStore
-            {
-                background:red;
             }
         }
     }
-    
-    #store_map_map
-    {
-        @include flex (5);
-        height:$hauteurCarte;
-        min-width:330px;
-        
-        .gm-style-iw
-        {
-            
-            p
-            {
-                margin-top:2px;
-                margin-bottom:2px;
-            }
-            
-        }
-    }
+  
  }

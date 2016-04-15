@@ -55,3 +55,21 @@ $o: false !default;
     @content;
   }
 }
+
+
+// Media Query
+
+$tablette-width: 1009px;
+@mixin tablette {
+  @media (max-width: #{$tablette-width}) {
+    @content;
+  }
+}
+
+
+$mobile-width: 709px;
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
