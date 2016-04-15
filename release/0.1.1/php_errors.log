@@ -1,0 +1,10 @@
+[14-Apr-2016 19:59:27 UTC] PHP Warning:  preg_match(): Compilation failed: nothing to repeat at offset 1 in /home/ubuntu/workspace/wp-content/plugins/store-map/node_modules/grunt-wp-i18n/vendor/wp-i18n-tools/extract.php on line 55
+[14-Apr-2016 19:59:27 UTC] PHP Stack trace:
+[14-Apr-2016 19:59:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-content/plugins/store-map/node_modules/grunt-wp-i18n/vendor/wp-i18n-tools/grunt-makepot.php:0
+[14-Apr-2016 19:59:27 UTC] PHP   2. call_user_func:{/home/ubuntu/workspace/wp-content/plugins/store-map/node_modules/grunt-wp-i18n/vendor/wp-i18n-tools/grunt-makepot.php:174}() /home/ubuntu/workspace/wp-content/plugins/store-map/node_modules/grunt-wp-i18n/vendor/wp-i18n-tools/grunt-makepot.php:174
+[14-Apr-2016 19:59:27 UTC] PHP   3. GruntMakePOT->wp_plugin() /home/ubuntu/workspace/wp-content/plugins/store-map/node_modules/grunt-wp-i18n/vendor/wp-i18n-tools/grunt-makepot.php:174
+[14-Apr-2016 19:59:27 UTC] PHP   4. MakePOT->xgettext() /home/ubuntu/workspace/wp-content/plugins/store-map/node_modules/grunt-wp-i18n/vendor/wp-i18n-tools/grunt-makepot.php:53
+[14-Apr-2016 19:59:27 UTC] PHP   5. StringExtractor->extract_from_directory() /home/ubuntu/workspace/wp-content/plugins/store-map/node_modules/grunt-wp-i18n/vendor/wp-i18n-tools/makepot.php:187
+[14-Apr-2016 19:59:27 UTC] PHP   6. StringExtractor->extract_from_directory() /home/ubuntu/workspace/wp-content/plugins/store-map/node_modules/grunt-wp-i18n/vendor/wp-i18n-tools/extract.php:38
+[14-Apr-2016 19:59:27 UTC] PHP   7. StringExtractor->does_file_name_match() /home/ubuntu/workspace/wp-content/plugins/store-map/node_modules/grunt-wp-i18n/vendor/wp-i18n-tools/extract.php:33
+[14-Apr-2016 19:59:27 UTC] PHP   8. preg_match() /home/ubuntu/workspace/wp-content/plugins/store-map/node_modules/grunt-wp-i18n/vendor/wp-i18n-tools/extract.php:55

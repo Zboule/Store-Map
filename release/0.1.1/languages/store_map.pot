@@ -1,0 +1,98 @@
+# Copyright (C) 2016 Jordane CURE
+# This file is distributed under the GPLv2+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Store Map 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/store_map\n"
+"POT-Creation-Date: 2016-04-15 13:13:30+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#. Plugin Name of the plugin/theme
+msgid "Store Map"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:16
+msgid "Stores Map"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:18
+msgid "Parent Store"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:19
+msgid "All stores"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:20
+msgid "View Store"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:21
+msgid "Store Name"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:22
+msgid "Add"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:23
+msgid "Edit Store"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:24
+msgid "Update Store"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:25
+msgid "Search Store"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:26
+msgid "Not Found"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:27
+msgid "Not found in Trash"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:33
+msgid "stores"
+msgstr ""
+
+#: includes/admin/custom_post_type/store_map_custom_post_type.php:34
+msgid "Stores"
+msgstr ""
+
+#: includes/admin/import_page/import_page.php:38
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/visitor/store_map_shortcode.php:32
+msgid "Address or zip code"
+msgstr ""
+
+#: includes/visitor/store_map_shortcode.php:33
+msgid "Search"
+msgstr ""
+
+#: includes/visitor/store_map_shortcode.php:34
+msgid "Find near me"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Simple liste of store on the map"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Jordane CURE"
+msgstr ""
