@@ -22,7 +22,6 @@ class Store_Map_Customise_Post_Editor {
     function customise_post_style ()
     {
         $this->add_editor_title();
-        
 
         $this->change_place_holder_title();
         

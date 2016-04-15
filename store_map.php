@@ -42,7 +42,6 @@ define( 'store_map_URL',     plugin_dir_url( __FILE__ ) );
 define( 'store_map_PATH',    dirname( __FILE__ ) . '/' );
 
 
-
 /**
  * Default initialization for the plugin:
  * - Registers the default textdomain.
@@ -51,10 +50,11 @@ define( 'store_map_PATH',    dirname( __FILE__ ) . '/' );
  */
 function store_map_init() {
 	
-	$locale = apply_filters( 'plugin_locale', get_locale(), 'store_map' );
-	load_textdomain( 'store_map', WP_LANG_DIR . '/store_map/store_map-' . $locale . '.mo' );
-	load_plugin_textdomain( 'store_map', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+	// $locale = apply_filters( 'plugin_locale', get_locale(), 'store_map' );
+	// load_textdomain( 'store_map', WP_LANG_DIR . '/store_map/store_map-' . $locale . '.mo' );
 	
+	load_plugin_textdomain( 'store_map', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+
 		
 	include_once(store_map_PATH."includes/store_map_core.php");
 	$storeMap = new Store_Map_Core ();
@@ -77,16 +77,6 @@ function store_map_activate() {
 }
 register_activation_hook( __FILE__, 'store_map_activate' );
 
-
-
-/**
- * Deactivate the plugin
- * Uninstall routines should be in uninstall.php
- */
-function store_map_deactivate() {
-
-}
-register_deactivation_hook( __FILE__, 'store_map_deactivate' );
 
 
 

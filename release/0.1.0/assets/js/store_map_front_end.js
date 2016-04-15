@@ -421,7 +421,7 @@ function Green_Tiger_Store_Model (adresse,lat,lng,id,titre,descriptionListe,desc
     this.adresse = adresse || "Adresse inconnu";
     this.coordonate = new google.maps.LatLng(lat, lng);
     this.id = id;
-    this.descriptionListe = descriptionListe|| "Description inconnu";
+    this.descriptionListe = descriptionListe || "Description inconnu";
     this.descriptionMarker = descriptionMarker || ('<h5>'+ titre +'</h5>' + descriptionListe);
 }
 

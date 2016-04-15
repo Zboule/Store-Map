@@ -7,6 +7,7 @@ class Store_Map_Import_Page {
     * Constructeur
     * Cette fonction doit être appelé lors de l'init
     */
+    
     function __construct ()
     {
         $this->create_page ();
@@ -84,6 +85,7 @@ class Store_Map_Import_Page {
     
     function define_ajax_callback() 
     {
+                             
         add_action( 'wp_ajax_store_map_import_cvs', function ()
         {
             global $wpdb; // this is how you get access to the database

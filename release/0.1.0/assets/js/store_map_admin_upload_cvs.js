@@ -53,6 +53,8 @@ jQuery(document).ready(function($) {
 		//console.log("Debut :" + JSON.stringify(store_data,null,2));
 
 		//Envoie des données en AJAX
+
+		
 		jQuery.post(ajax_object.ajax_url, data, function(response) {
 			alert('Got this from the server: ' + response);
 		});

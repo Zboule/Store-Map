@@ -126,7 +126,17 @@ module.exports = function( grunt ) {
 				options: {
 					debounceDelay: 500
 				}
+			},
+			
+			php: {
+				files: [ '**/*.php' ], //Parse all php files 
+				task: ['pot'],
+				options: {
+					debounceDelay: 500
+				}
 			}
+			
+			
 		},
 		clean: {
 			main: ['release/<%= pkg.version %>']
@@ -162,7 +172,17 @@ module.exports = function( grunt ) {
 				src: ['**/*'],
 				dest: 'store_map/'
 			}		
-		}
+		},
+		
+		makepot: {
+	        target: {
+	            options: {
+	                type: 'wp-plugin',
+	                 exclude: ['release/','node_modules/','git/','sass-cache/'],         
+	            }
+	        }
+	    }
+  
 	} );
 	
 	// Load other tasks
@@ -178,12 +198,14 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-compress' );
 	
+	grunt.loadNpmTasks( 'grunt-wp-i18n' );
+	
 	// Default task.
 	
 	grunt.registerTask( 'default', ['jshint', 'concat', 'uglify', 'sass', 'cssmin'] );
-	
-	
+
 	grunt.registerTask( 'build', ['default', 'clean', 'copy', 'compress'] );
+
 
 	grunt.util.linefeed = '\n';
 };

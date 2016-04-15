@@ -22,15 +22,16 @@ class Store_Map {
     {
         $html_output;
         
+        
         ob_start();
         ?>
         
             <div id="store_map_container">
             
                 <div id="store_map_recherche">
-                    <input type="search" id="store_map_search_input" placeholder="Concesisionaire à proximité" >
-                    <input type="button" id="store_map_search_button" value= "Recherche">
-                    <input type="button" id="store_map_my_position_button" value= "Trouver le plus proche">
+                    <input type="search" id="store_map_search_input" placeholder= "<?php _e( 'Concessionnaires à proximité', 'store_map' ); ?>"  >
+                    <input type="button" id="store_map_search_button" value="<?php _e( 'Rechercher', 'store_map' ); ?>" >
+                    <input type="button" id="store_map_my_position_button" value= "<?php _e( 'Trouver le plus proche', 'store_map' ); ?>">
                 </div>
                 
                 <div id="store_map_liste">
