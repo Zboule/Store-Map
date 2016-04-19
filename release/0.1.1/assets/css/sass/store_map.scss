@@ -14,7 +14,7 @@
 
  #store_map_container
  {
-    $hauteurCarte : 500px;
+    $hauteurCarte : 800px;
     $couleurDominante : red;
     $couleurSecondaire : transparent;
     $couleurBordures : transparent;
@@ -76,6 +76,7 @@
         
         height:$hauteurCarte;
         overflow:hidden;
+        min-height:240px;
         
         @include flexbox;
         
@@ -94,12 +95,10 @@
         {
             @include flex (2);
             min-width:300px;
-            min-height:240px;
-
+            
             overflow:scroll;
             border-right:2px solid $couleurBordures;
-    
-    
+            
             .store_map_description
             {
                 border-top:1px solid $couleurBordures;
@@ -185,9 +184,8 @@
         #store_map_map
         {
             @include flex (5);
-            min-width:400px;
-            min-height:240px;
-            
+            min-width:550px;
+
             
             .gm-style-iw
             {

@@ -89,8 +89,9 @@
     -moz-flex: 1 100%;
     -ms-flex: 1 100%;
     flex: 1 100%;
-    height: 500px;
+    height: 800px;
     overflow: hidden;
+    min-height: 240px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -118,7 +119,6 @@
       -ms-flex: 2;
       flex: 2;
       min-width: 300px;
-      min-height: 240px;
       overflow: scroll;
       border-right: 2px solid transparent; }
       #store_map_container #store_map_display #store_map_liste .store_map_description {
@@ -219,8 +219,7 @@
       -moz-flex: 5;
       -ms-flex: 5;
       flex: 5;
-      min-width: 400px;
-      min-height: 240px; }
+      min-width: 550px; }
       #store_map_container #store_map_display #store_map_map .gm-style-iw p {
         margin-top: 2px;
         margin-bottom: 2px; }
